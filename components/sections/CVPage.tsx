@@ -9,7 +9,7 @@ export function CVPage() {
       <header className="mb-8 flex flex-col sm:flex-row items-center sm:items-start gap-4">
         <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-neon-cyan/30 shrink-0">
           <Image
-            src="/images/avatar.jpg"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/avatar.jpg`}
             alt=""
             fill
             sizes="112px"
