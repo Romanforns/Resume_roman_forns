@@ -37,10 +37,10 @@ export function PipelineSection({ cv }: PipelineSectionProps) {
   }, []);
 
   return (
-    <section className="border-y border-border bg-surface/50 font-sans">
+    <section className="border-y border-border bg-surface/50 font-sans overflow-x-visible">
       <div
         ref={pipelineAreaRef}
-        className={`container mx-auto px-4 pt-4 md:pt-6 ${activeNode === null ? 'pb-4 md:pb-6' : 'pb-10 md:pb-14'}`}
+        className={`container mx-auto px-4 pt-4 md:pt-6 overflow-x-visible ${activeNode === null ? 'pb-4 md:pb-6' : 'pb-10 md:pb-14'}`}
       >
         {/* Vidit-style pipeline: horizontal flow with layer sections and connector lines */}
         <div className={`pipeline-container ${activeNode === null ? 'pipeline-container--symmetric' : 'mb-12'}`}>
