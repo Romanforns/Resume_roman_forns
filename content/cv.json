@@ -1,0 +1,206 @@
+{
+  "name": "Roman Forns",
+  "headline": "Data Architect & BI Consultant",
+  "summary": "Data Architect & Engineer with 10+ years designing and implementing large-scale data solutions across retail, chemicals, energy, and transport. Leads end-to-end data architecture, BI ecosystems, cloud data pipelines (GCP, Azure, Snowflake, Microsoft Fabric), and enterprise integration (SAP–Salesforce, event-driven). Delivers scalable platforms and reusable frameworks; acts as technical lead and solution architect on multi-year engagements. Expanding into Blockchain and AI for next-generation data ecosystems.",
+  "summaryExtended": "Data Architect & Engineer with 10+ years in large-scale data solutions (retail, chemicals, energy, maritime). BI, Data Warehousing, cloud pipelines (GCP, Azure, Snowflake, Fabric), enterprise integration (SAP–Salesforce, event-driven), ETL (Talend, dbt, Airflow). Leads multidisciplinary teams; builds reusable frameworks and scalable BI/data platforms. Technical lead and solution architect on multi-year engagements. Expanding into Blockchain and AI.",
+  "coreStrengths": [
+    "End-to-end data architecture and cloud data pipelines",
+    "BI ecosystems: Power BI, SSAS Tabular, semantic models, KPIs",
+    "Enterprise integration: SAP, Salesforce, event-driven architectures",
+    "ETL & orchestration: dbt, Apache Airflow, Talend, DataBricks",
+    "Technical leadership and solution architecture on multi-year engagements",
+    "Reusable frameworks and data governance"
+  ],
+  "experience": [
+    {
+      "title": "Data Architect & BI Consultant",
+      "company": "SDG Group",
+      "companyUrl": "https://www.sdggroup.com/",
+      "start": "Apr 2021",
+      "end": "Present",
+      "summary": "Lead end-to-end data architecture, integration, and orchestration across retail, chemicals, energy, and transport. Deliver scalable BI, cloud data pipelines, and event-driven integrations for enterprise clients.",
+      "impact": [
+        "Established best practices for event-driven architectures and data orchestration across heterogeneous systems.",
+        "Delivered cloud-native pipelines (GCP, Azure, Snowflake, Fabric), enabling scalable analytics and near real-time reporting.",
+        "Technical lead on integration and BI proposals; contributed architectural blueprints and reusable frameworks."
+      ],
+      "projects": [
+        "INDITEX (Zara) — BI & Data for Sustainability and Commercial (~3 years): corporate sustainability dashboards, SSAS Tabular model (Join Life, rankings, composition), Snowflake data layer, Power BI reporting (SSP, GTW traceability), DataBricks pipelines, RLS and data governance.",
+        "TOUS (2025) — Migration of data platform (GPC_Tous): FastAPI APIs (recommendations, cart, wishlist), Repository Pattern and multi-level cache, Airflow DAGs metadata-driven (YAML), BigQuery/Datastore/Dataflow, Vista 360, 27+ pipelines migrated.",
+        "DOMO (2025–2026) — Customer data integration (Salesforce & Data Hub): canonical JSON model, custom Java JSON utility library (2.5k+ lines), Talend processes for read/write, backfill and CDC in three modules (Data Hub, CRM, ERP).",
+        "RENFE (2024–2025) — Analysis and optimisation of Power BI semantic model (FyM Inmovilizado, Snowflake): 10 modelling/DAX anti-patterns identified, impact with high volumetry documented, prioritised optimisation plan and phased roadmap.",
+        "DACSA (2025–2026) — Data platform migration on Microsoft Fabric & Dynamics 365: medallion architecture, dbt project (60+ Silver models, Gold dimensions), ingestion notebooks (Eurostat, AEMET, CBOT), CI/CD for dbt and SQL Warehouses."
+      ]
+    },
+    {
+      "title": "BI Data Analyst",
+      "company": "Bodegas Binifadet",
+      "companyUrl": "https://www.binifadet.com/",
+      "start": "Mar 2018",
+      "end": "Mar 2021",
+      "summary": "Led the end-to-end design and implementation of the data & BI ecosystem for Bodegas Binifadet, from wine production to hospitality and gastronomy operations. Built scalable reporting frameworks for data-driven decisions across production, sales, and customer experience.",
+      "impact": [
+        "Designed and deployed a centralized Data Warehouse integrating operational, financial, and production sources.",
+        "Developed BI dashboards and predictive models to optimize oenological processes, resource planning, and sales forecasting.",
+        "Standardized KPI frameworks and automated reporting pipelines; introduced data validation for quality and consistency."
+      ]
+    },
+    {
+      "title": "Deputy Project Director",
+      "company": "CAE",
+      "companyUrl": "https://www.caeme.com/",
+      "start": "Jan 2017",
+      "end": "Nov 2017",
+      "summary": "Supported the Project Director in managing the mechanical and electrical scope of the IDG-E Package 3 Onshore Pipeline & Habshan Modifications Project for GASCO, as subcontractor to Técnicas Reunidas. Oversaw planning, reporting, and stakeholder coordination in a complex EPC environment.",
+      "impact": [
+        "Directed cross-functional technical and administrative teams; prepared and updated project plans, schedules, and status reports.",
+        "Led stakeholder meetings to ensure delivery against scope, time, and budget; coordinated reconciliation and project close-out with accurate data collection.",
+        "Designed and implemented integrated dashboards to monitor project progress from engineering through commissioning, and executive dashboards for corporate committees and decision-makers."
+      ]
+    },
+    {
+      "title": "Deputy Asset Integrity Manager",
+      "company": "GMS",
+      "companyUrl": "https://www.gmsuae.com/",
+      "start": "Aug 2016",
+      "end": "Dec 2016",
+      "summary": "Accountable for maintenance management and class certification of the GMS Jack Up Barges fleet (13 units: E-Class, S-Class, K-Class). Reviewed and improved preventive maintenance procedures; developed a fleet-wide integrated maintenance schedule aligned with class and OEM requirements.",
+      "impact": [
+        "Identified and validated data sources; used Power BI to create KPIs and scorecards for maintenance plans and class certification targets.",
+        "Built a live fleet status dashboard integrating class inspections and maintenance, enabling management to forecast impact on fleet revenue; documented data definitions and budget priorities with stakeholders."
+      ]
+    },
+    {
+      "title": "Project Engineer",
+      "company": "GMS",
+      "companyUrl": "https://www.gmsuae.com/",
+      "start": "Jun 2015",
+      "end": "Aug 2016",
+      "summary": "Managed the structural, piping and mechanical scope of a Jack Up Barges newbuild program (two NG-1800X, one NG-2500X); accountable for commissioning and sea trials. Set up a new fabrication and outfitting shipyard at Mina Zayed Port. Achieved 11% cost reduction on structural steel and 20% on piping; delivered commissioning and sea trials 2 weeks ahead of schedule.",
+      "impact": [
+        "Developed integrated dashboards for engineering drawings status, materials procurement and delivery, manpower scenarios, fabrication/installation progress and QC clearance, and financial reporting (budget consumption, milestones)."
+      ]
+    },
+    {
+      "title": "Project Engineer",
+      "company": "IMCC",
+      "companyUrl": "https://www.imcc.ae/",
+      "start": "Mar 2014",
+      "end": "Jun 2015",
+      "summary": "Responsible for hull repairs, fabrication and installation of production plant steel modules and piping on the Sagar Samrat Jack Up Rig conversion (MODU to MOPU) for ONGC India. Delivered 7–12% savings in fabrication, installation and reconciliation; managed up to 380 multidisciplinary professionals.",
+      "impact": [
+        "Implemented supply chain dashboards for raw materials; built productivity tracking and daily dashboards for documentation status, material availability, fabrication/installation progress, and budget consumption."
+      ]
+    },
+    {
+      "title": "Site Engineer",
+      "company": "IMCC",
+      "companyUrl": "https://www.imcc.ae/",
+      "start": "Sep 2013",
+      "end": "Mar 2014",
+      "summary": "Accountable for steel construction and accommodation outfitting of the superstructure of the Rumailah Jack Up Rig newbuild for Gulf Drilling International Qatar. Achieved 8% saving on man-hours and 6% on equipment usage; completed on schedule; managed up to 170 workers and 5 subcontractors.",
+      "impact": [
+        "Developed dashboards for workfront availability (drawings revision, material availability, QC reports), optimizing man-hours and equipment usage."
+      ]
+    },
+    {
+      "title": "Permit to Work Coordinator",
+      "company": "IMCC",
+      "companyUrl": "https://www.imcc.ae/",
+      "start": "Aug 2013",
+      "end": "Sep 2013",
+      "summary": "Responsible for implementing and ensuring compliance of the Permit to Work system (~200 permits/day) for the Al Yasat Jack Up Rig conversion (MOPU to MODU) for National Drilling Company Abu Dhabi. Achieved zero Lost Time Incidents; issued daily priority permit lists by risk and project priorities; optimized PTW meetings.",
+      "impact": [
+        "Developed dashboards to visualize simultaneous dry-dock activities with risk rating and task priority, enabling quick identification of permits for discussion and assessment."
+      ]
+    }
+  ],
+  "selectedProjectSlugs": ["inditex-bi-sustainability", "tous-data-platform", "domo-salesforce-data-hub", "renfe-power-bi-optimisation", "dacsa-fabric-migration", "defi-risk-engine", "mdif-ingestion-framework"],
+  "skills": [
+    { "category": "Coding", "items": "Python, SQL, Java", "level": 90 },
+    { "category": "BI & Analytics", "items": "Power BI, SSAS Tabular, DAX, Power Query", "level": 95 },
+    { "category": "Cloud & Data Platforms", "items": "Snowflake, GCP (BigQuery, Composer), Azure, Microsoft Fabric", "level": 85 },
+    { "category": "ETL & Orchestration", "items": "dbt, Apache Airflow, Talend, DataBricks", "level": 88 },
+    { "category": "Integration", "items": "REST APIs, FastAPI, Salesforce, SAP, event-driven architectures", "level": 85 }
+  ],
+  "areasOfExpertise": [
+    "Data Architecture & Warehousing",
+    "BI Dashboards, KPIs & Semantic Models",
+    "Enterprise Integration (SAP, Salesforce, Event-Driven)",
+    "Data Governance & Quality",
+    "Solution Architecture & Technical Lead",
+    "Stakeholder Management & Cross-functional Collaboration"
+  ],
+  "professionalAttributes": [
+    "Technical Leadership & Mentoring",
+    "Stakeholder Alignment & Communication",
+    "Reusable Frameworks & Best Practices",
+    "Analytic Thinking & Problem Solving",
+    "Agile Methodologies & Delivery Focus"
+  ],
+  "languages": [
+    { "name": "English", "level": "Professional working", "levelPercent": 90 },
+    { "name": "Italian", "level": "Professional working", "levelPercent": 90 },
+    { "name": "Spanish", "level": "Native", "levelPercent": 100 },
+    { "name": "Catalan", "level": "Native", "levelPercent": 100 }
+  ],
+  "education": [
+    {
+      "degree": "Master's Degree in Naval Architecture & Oceanic Engineering",
+      "institution": "Polytechnic University of Madrid (UPM)",
+      "institutionUrl": "https://www.etsin.upm.es/",
+      "start": "2011",
+      "end": "2014"
+    },
+    {
+      "degree": "Bachelor's Degree in Marine Engineering",
+      "institution": "Polytechnic University of Catalonia (UPC)",
+      "institutionUrl": "https://www.upc.edu/es/",
+      "start": "2008",
+      "end": "2011"
+    }
+  ],
+  "certifications": [],
+  "contact": {
+    "location": "Anzio (RM)",
+    "phone": "+39 3270838798",
+    "email": "romanforns@gmail.com",
+    "skype": "Román Forns",
+    "skypeId": "live:.cid.fd217bfc7e8c0895",
+    "linkedin": "https://linkedin.com/in/román-forns-anglada-b91a5850/",
+    "github": "https://github.com/Romanforns",
+    "website": "https://romanforns.com"
+  },
+  "personalProjects": [
+    {
+      "title": "SDG_TEST_DataTech — Metadata-driven data platform",
+      "slug": "sdg-test-datatech",
+      "timeframe": "2025",
+      "description": "End-to-end data transformation platform: reusable Spark framework (validation, versioning, writers), validated ingestion, RAW load to Snowflake/PostgreSQL, and Data Vault 2.0 + marts materialisation. Stack: Apache Airflow, Spark (PySpark), dbt; dataflows and configs in JSON."
+    },
+    {
+      "title": "MDIF — Metadata-Driven Ingestion Framework",
+      "slug": "mdif-ingestion-framework",
+      "timeframe": "2024–2026 (ongoing)",
+      "description": "Framework for automated data migration and ingestion across PostgreSQL, MySQL and Snowflake. Declarative YAML config (sources, destination, table schemas); automatic schema discovery (INFORMATION_SCHEMA); idempotent DDL generation with type mapping; batch and incremental (cursor-based) strategies; orchestration with Apache Airflow. Docker-based deployment."
+    },
+    {
+      "title": "On-Chain DeFi Risk Engine",
+      "slug": "defi-risk-engine",
+      "timeframe": "2024–2025",
+      "description": "Risk and credit-score engine for DeFi wallets (Aave V3 on Base). On-chain indexer (WebSocket + backfill), canonical event model in USD, idempotent persistence in PostgreSQL. Risk features (repayment ratio, liquidations, wallet age, protocol diversity, leverage) and configurable weighted scoring (0–100). REST API (Express/TypeScript) with rate limiting and validation; Next.js frontend for wallet lookup and score/features visualisation. Docker deployment."
+    },
+    {
+      "title": "Propuesta INDITEX IOP/CDP — Omnichannel Customer Platform",
+      "slug": "iop-cdp",
+      "timeframe": "2024–2025",
+      "description": "Response to Inditex RFI for an Omnichannel Customer Platform (IOP/CDP): proposal document (experience, architecture, identity resolution, roadmap) and executable MVP. Three core capabilities: real-time identity resolution (deterministic and probabilistic, risk flags, ACTIVE/SHADOW, merge ledger); unified Customer 360 profile and segmentation from 8+ sources; governance, consent (PDP, frequency capping) and RTBF with evidence. Raw–Silver–Gold architecture; FastAPI APIs; batch and near-real-time pipelines; contract-based validation."
+    },
+    {
+      "title": "Avv. Sorcecchi — Legal assistant with AI",
+      "slug": "avv-sorcecchi",
+      "timeframe": "2025",
+      "description": "RAG-based legal assistant for Italian law firms: document ingestion (PDF, DOCX, TXT, MD; optional OCR), semantic indexation (LlamaIndex, Chroma), conversational chat with cited sources. LangChain agents for summaries, legal drafts (atti giudiziari, comunicazioni, diffide) and case analysis (structured extraction). Case/expedient management, procedural timeline, scadenze and notifications, audit log, dashboard. Backend FastAPI, frontend Next.js; 100% local stack (Ollama, sentence-transformers, Chroma) for GDPR and professional secrecy."
+    }
+  ]
+}

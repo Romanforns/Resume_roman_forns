@@ -1,0 +1,23 @@
+---
+slug: mdif-ingestion-framework
+title: "MDIF — Metadata-Driven Ingestion Framework"
+timeframe: "2024–2026 (ongoing)"
+role: Personal
+domain:
+  - data-engineering
+  - devops-platform
+stack:
+  - Python 3.11+
+  - YAML
+  - PostgreSQL
+  - MySQL
+  - Snowflake
+  - Apache Airflow 2.x
+  - Docker Compose
+problem: "Automated data migration and ingestion across PostgreSQL, MySQL and Snowflake with declarative config, schema discovery and batch/incremental strategies."
+approach: "Declarative YAML config (sources, destination, table schemas); automatic schema discovery (INFORMATION_SCHEMA); idempotent DDL generation with type mapping; batch and cursor-based incremental; orchestration with Airflow (discover → validate → generate → run → cleanup)."
+outcome: "Declarative migration and ingestion; single config point; automatic DDL and code generation; batch and incremental with volumetry control; idempotent re-runs."
+confidentialityLevel: public
+---
+
+Framework for automated data migration and ingestion between PostgreSQL, MySQL and Snowflake. Idempotent, extensible and multi-engine; post-ingestion row-count verification; error and timeout handling. Docker-based deployment.

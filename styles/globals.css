@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0d0d0f;
+  --surface: #16161a;
+  --text: #e4e4e7;
+  --muted: #71717a;
+  --border: #27272a;
+  --neon-cyan: #22d3ee;
+  --neon-purple: #a78bfa;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-bg text-text;
+  }
+  a:focus-visible {
+    @apply outline-2 outline-offset-2 outline-neon-cyan;
+  }
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-neon-cyan rounded;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply text-2xl md:text-3xl font-semibold text-text border-b border-border pb-2 mb-6;
+  }
+  .card {
+    @apply bg-surface border border-border rounded-card p-5 transition-colors hover:border-neon-cyan-dim hover:shadow-glow;
+  }
+  .badge {
+    @apply inline-block px-2 py-0.5 text-xs font-mono rounded-badge bg-surface-hover text-muted border border-border;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-card bg-neon-cyan-dim text-bg font-medium hover:bg-neon-cyan hover:shadow-glow transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-neon-cyan;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-card border border-border text-text hover:border-neon-cyan-dim hover:text-neon-cyan transition-colors;
+  }
+}
+
+/* Print mode for CV/PDF export */
+@media print {
+  body {
+    @apply bg-white text-black;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print\:py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* ---------- Pipeline (Vidit-style): 1.3x scale, icons unchanged ---------- */
+.pipeline-container {
+  @apply flex justify-start items-center w-full max-w-[1820px] mx-auto overflow-x-auto font-sans;
+  padding: 0 1.625rem;
+  margin-top: clamp(12px, 2vh, 24px);
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* When nothing selected: same space below as above (symmetric) */
+.pipeline-container--symmetric {
+  margin-bottom: clamp(12px, 2vh, 24px);
+}
+
+.pipeline-flow {
+  @apply flex items-center gap-0 relative mx-auto;
+  min-width: max-content;
+  padding: 10px 6px;
+}
+
+.pipeline-layer-section {
+  @apply flex items-center gap-0 relative transition-all duration-300;
+  padding: 47px 13px 13px 13px;
+  border-radius: 26px;
+}
+
+.pipeline-layer-section.bronze-layer {
+  background: transparent;
+  box-shadow: inset 0 0 60px rgba(205,127,50,0.4), 0 0 50px rgba(205,127,50,0.25);
+}
+
+.pipeline-layer-section.silver-layer {
+  background: transparent;
+  box-shadow: inset 0 0 60px rgba(192,192,192,0.4), 0 0 50px rgba(192,192,192,0.25);
+}
+
+.pipeline-layer-section.gold-layer {
+  background: transparent;
+  box-shadow: inset 0 0 60px rgba(255,215,0,0.4), 0 0 50px rgba(255,215,0,0.25);
+}
+
+.pipeline-layer-label {
+  @apply absolute font-bold uppercase font-sans;
+  top: 8px;
+  left: 14px;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  opacity: 0.85;
+}
+
+.pipeline-layer-label.bronze-label { color: rgba(205,127,50,0.95); }
+.pipeline-layer-label.silver-label { color: rgba(192,192,192,0.95); }
+.pipeline-layer-label.gold-label { color: rgba(255,215,0,0.95); }
+
+.pipeline-connector-line {
+  width: 65px;
+  height: 5px;
+  @apply relative z-[1] flex-shrink-0 self-center;
+}
+
+.pipeline-connector-line.bronze-line {
+  background: linear-gradient(90deg, rgba(205,127,50,0.7), rgba(205,127,50,0.9));
+  box-shadow: 0 0 12px rgba(205,127,50,0.5);
+}
+
+.pipeline-connector-line.silver-line {
+  background: linear-gradient(90deg, rgba(192,192,192,0.7), rgba(192,192,192,0.9));
+  box-shadow: 0 0 12px rgba(192,192,192,0.5);
+}
+
+.pipeline-connector-line.gold-line {
+  background: linear-gradient(90deg, rgba(255,215,0,0.7), rgba(255,215,0,0.9));
+  box-shadow: 0 0 12px rgba(255,215,0,0.5);
+}
+
+.pipeline-connector-line.transition-line {
+  background: linear-gradient(90deg, rgba(200,150,90,0.7), rgba(220,180,100,0.7));
+  box-shadow: 0 0 12px rgba(210,165,95,0.5);
+  margin-top: 29px;
+}
+
+.pipeline-connector-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -13px;
+  width: 13px;
+  height: 5px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 2.5px;
+  animation: pipelineFlowParticle 2s linear infinite;
+  box-shadow: 0 0 10px rgba(255,255,255,0.7);
+}
+
+@keyframes pipelineFlowParticle {
+  0% { left: -13px; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+
+.pipeline-card {
+  @apply relative border-2 text-center cursor-pointer transition-all duration-300 flex flex-col items-center justify-center gap-2.5 font-sans;
+  min-width: 94px;
+  max-width: 182px;
+  padding: 14px 13px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(30,30,30,0.95), rgba(20,20,20,0.95));
+  border-color: rgba(255,255,255,0.08);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  scroll-snap-align: center;
+}
+
+.pipeline-card.pipeline-card--wide {
+  min-width: 140px;
+  max-width: 260px;
+  padding: 14px 18px;
+}
+
+.pipeline-card:hover,
+.pipeline-card.active {
+  transform: translateY(-10px) scale(1.06);
+  border-color: rgba(255,255,255,0.28);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  z-index: 10;
+}
+
+.pipeline-card.bronze-card:hover,
+.pipeline-card.bronze-card.active {
+  border-color: rgba(205,127,50,0.8);
+  box-shadow: 0 10px 30px rgba(205,127,50,0.45);
+}
+
+.pipeline-card.silver-card:hover,
+.pipeline-card.silver-card.active {
+  border-color: rgba(192,192,192,0.8);
+  box-shadow: 0 10px 30px rgba(192,192,192,0.45);
+}
+
+.pipeline-card.gold-card:hover,
+.pipeline-card.gold-card.active {
+  border-color: rgba(255,215,0,0.85);
+  box-shadow: 0 10px 30px rgba(255,215,0,0.45);
+}
+
+.pipeline-card-title {
+  @apply font-sans font-semibold uppercase tracking-wide text-zinc-300 leading-tight;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (min-width: 768px) {
+  .pipeline-card-title { font-size: 15px; }
+}

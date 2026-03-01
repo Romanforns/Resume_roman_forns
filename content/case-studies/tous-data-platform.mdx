@@ -1,0 +1,25 @@
+---
+slug: tous-data-platform
+title: "TOUS — Data platform and recommendations (migration)"
+timeframe: "2025"
+role: Data Architect & BI Consultant
+domain:
+  - data-engineering
+  - analytics-bi
+  - architecture-integration
+stack:
+  - FastAPI
+  - Apache Airflow
+  - BigQuery
+  - Dataflow
+  - Datastore
+  - Salesforce
+  - Hybris
+  - PySpark
+problem: "Migration from monolithic base (Flask, coupled DAGs, scattered config) to a layered, maintainable platform with same behaviour and better performance/cost."
+approach: "Layered architecture with FastAPI, Repository Pattern, multi-level cache, metadata-driven DAG definition (YAML + JSON Schema), externalised SQL, 27+ pipelines migrated."
+outcome: "Modernised platform with lower API latency and DAG runtime, reduced BigQuery/Dataflow/cache cost, tests, structured logging, documentation."
+confidentialityLevel: confidential
+---
+
+Migration and refactoring of the TOUS data platform (GPC_Tous). REST APIs (recommendations, abandoned cart, wishlist, views, Hybris), data pipelines (SFTP landing via Dataflow, Salesforce, Google Analytics, Facebook, Hybris, loyalty), Customer 360 view, exports to Datastore and Marketing Cloud. Recommendation system (73+ use cases, SVD model). Deployed on Google Cloud (BigQuery, Datastore, Dataflow, Pub/Sub, Composer/Airflow).

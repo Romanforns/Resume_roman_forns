@@ -1,0 +1,25 @@
+---
+slug: defi-risk-engine
+title: "On-Chain DeFi Risk Engine"
+timeframe: "2024–2025"
+role: Personal / PoC
+domain:
+  - blockchain-web3
+  - data-engineering
+stack:
+  - ethers v6
+  - Base
+  - Node.js/TypeScript
+  - Express
+  - PostgreSQL
+  - Next.js
+  - React
+  - Tailwind
+  - Docker
+problem: "Risk and credit scoring for DeFi wallets (Aave V3 on Base) from on-chain data only, with reproducible, configurable model and API for integration."
+approach: "On-chain indexer (WebSocket + backfill), canonical USD model, idempotent persistence; risk feature engine (repayment ratio, liquidations, wallet age, protocol diversity, leverage); configurable weighted scoring (0–100); REST API and Next.js frontend."
+outcome: "Deterministic credit score and risk features; idempotent indexer and backfill; configurable model; API and frontend for demo and integration."
+confidentialityLevel: public
+---
+
+Risk and credit-score engine for DeFi wallets (Aave V3 on Base). On-chain indexer subscribing via WebSocket to Pool events, normalised to a canonical USD model and persisted idempotently in PostgreSQL. Risk feature engine and configurable weighted scoring. REST API (Express/TypeScript) for score, features and recompute by wallet address. Next.js frontend for address lookup and score/features visualisation. Docker deployment.

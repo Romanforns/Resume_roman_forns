@@ -1,0 +1,27 @@
+---
+slug: dacsa-fabric-migration
+title: "DACSA — Data platform migration (Microsoft Fabric & Dynamics 365)"
+timeframe: "2025–2026 (ongoing)"
+role: Data Architect & BI Consultant
+domain:
+  - data-engineering
+  - analytics-bi
+  - devops-platform
+stack:
+  - Microsoft Fabric
+  - OneLake
+  - Lakehouses
+  - SQL Warehouses
+  - dbt
+  - dbt-fabric
+  - Dynamics 365 F&O
+  - PySpark
+  - Terraform
+  - Azure DevOps
+problem: "Migration and evolution of DACSA's data platform on Microsoft Fabric with Dynamics 365 F&O as main transactional system; need for medallion architecture and external data (Eurostat, AEMET, CBOT)."
+approach: "Medallion architecture (Silver/Gold naming); dbt project (60+ Silver models, Gold dimensions); PySpark ingestion notebooks for external sources; CI/CD for dbt and SQL Warehouses; Terraform for Fabric workspaces."
+outcome: "Unified platform on Fabric with customer, financial, product and external data ready for reporting; documented naming and quality; reject models and dbt tests for traceability."
+confidentialityLevel: confidential
+---
+
+Migration and evolution of DACSA's data platform on Microsoft Fabric (OneLake, Lakehouses, SQL Warehouses) and Dynamics 365 F&O. Gold dimensions: customers, financial, companies, suppliers, products, calendar, analytical accounts, activities, cost centres, business units. External sources: Eurostat, AEMET OpenData, CBOT grain futures.

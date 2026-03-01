@@ -1,0 +1,24 @@
+---
+slug: domo-salesforce-data-hub
+title: "DOMO — Customer data integration (Salesforce & Data Hub)"
+timeframe: "2025–2026 (ongoing)"
+role: Data Architect & BI Consultant
+domain:
+  - sap-salesforce
+  - architecture-integration
+  - data-engineering
+stack:
+  - Talend
+  - Java
+  - Jackson
+  - Salesforce REST APIs
+  - ODH
+  - SAP BAPIs
+  - DB2
+problem: "Reliable customer master integration between Salesforce and DOMO ecosystem (ODH/SAP) with complex structures (tax, sales org, contacts, account teams) and bidirectional sync."
+approach: "Canonical customer model; custom Java JSON utility library (2.5k+ lines) as central engine; Talend processes for read/write, backfill, CDC; structural comparison for POST vs PATCH."
+outcome: "Robust, traceable exchange Salesforce ↔ ODH ↔ SAP; data quality, normalisation, advanced error handling; three modules (Data Hub, CRM, ERP)."
+confidentialityLevel: confidential
+---
+
+Customer integration between Salesforce and the DOMO ecosystem using Talend and Java. Flows cover complex structures with extraction, normalisation and structural comparison between Data Hub (ODH) JSON and Salesforce JSON. Pub/sub architecture with data quality and normalisation.

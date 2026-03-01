@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "headline": "Data Engineer & Solutions Architect",
+    "subline": "Data + Web3",
+    "profileLines": [
+      "I entered the data discipline over a decade ago through operational roles in maritime construction and Oil&Gas, where construction project management required exploiting the data. I now lead cloud data platforms and enterprise integration.",
+      "Hands-on across BI, scalable pipelines (GCP, Azure, Snowflake, Fabric), and SAP–Salesforce integration.",
+      "Technical lead and solutions architect: from architecture design through delivery of large-scale data solutions.",
+      "Over ten years focused on making data reliable, accessible, and actionable for business decisions; I contribute to the market’s evolution through blockchain solutions and AI integration."
+    ],
+    "ctaWork": "View Work",
+    "ctaContact": "Contact"
+  },
+  "heroVariant2": {
+    "headline": "Data Architect & BI Consultant",
+    "subline": "Data Platforms · Analytics · Integration",
+    "subheadline": "End-to-end data architecture, cloud data pipelines (GCP, Azure, Snowflake, Fabric), and enterprise integration (SAP–Salesforce)."
+  },
+  "stats": [
+    { "label": "Scope", "value": "End-to-end data architecture, from design through delivery", "safe": true },
+    { "label": "Stack", "value": "GCP, Azure, Snowflake, Fabric, SAP–Salesforce", "safe": true },
+    { "label": "Outcomes", "value": "Scalable pipelines, near real-time reporting, governed analytics", "safe": true }
+  ],
+  "services": [
+    {
+      "title": "Data Platforms",
+      "description": "Design and implementation of cloud data platforms: ingestion, storage, transformation, and orchestration. Medallion architectures, dbt, Airflow, Data Vault."
+    },
+    {
+      "title": "Analytics & BI",
+      "description": "BI ecosystems, semantic models, KPIs and dashboards. Power BI, SSAS Tabular, DAX, Snowflake. Governance, RLS, and data quality."
+    },
+    {
+      "title": "Blockchain Analytics",
+      "description": "On-chain data indexing, risk and credit scoring for DeFi. Proof-of-concepts and analytics pipelines for Web3 use cases."
+    }
+  ],
+  "contact": {
+    "ctaPrimary": "Get in touch",
+    "ctaSecondary": "Email for inquiries and project discussions."
+  }
+}
