@@ -10,7 +10,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mon
 export const metadata: Metadata = {
   title: { default: 'Roman Forns — Data Architect & BI Consultant', template: '%s | Roman Forns' },
   description:
-    'Data Architect & Engineer. 10+ years in data solutions, BI, cloud pipelines (GCP, Azure, Snowflake, Fabric), enterprise integration (SAP, Salesforce).',
+    'Data Architect & Engineer. 13 years of experience, 8+ in data, BI, cloud pipelines (GCP, Azure, Snowflake, Fabric), enterprise integration (SAP, Salesforce).',
   authors: [{ name: 'Roman Forns', url: 'https://romanforns.com' }],
   openGraph: { type: 'website' },
 };

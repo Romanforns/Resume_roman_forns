@@ -1,13 +1,13 @@
 {
   "name": "Roman Forns",
   "headline": "Data Architect & BI Consultant",
-  "summary": "Data Architect & Engineer with 10+ years designing and implementing large-scale data solutions across retail, chemicals, energy, and transport. Leads end-to-end data architecture, BI ecosystems, cloud data pipelines (GCP, Azure, Snowflake, Microsoft Fabric), and enterprise integration (SAP–Salesforce, event-driven). Delivers scalable platforms and reusable frameworks; acts as technical lead and solution architect on multi-year engagements. Expanding into Blockchain and AI for next-generation data ecosystems.",
-  "summaryExtended": "Data Architect & Engineer with 10+ years in large-scale data solutions (retail, chemicals, energy, maritime). BI, Data Warehousing, cloud pipelines (GCP, Azure, Snowflake, Fabric), enterprise integration (SAP–Salesforce, event-driven), ETL (Talend, dbt, Airflow). Leads multidisciplinary teams; builds reusable frameworks and scalable BI/data platforms. Technical lead and solution architect on multi-year engagements. Expanding into Blockchain and AI.",
+  "summary": "Data Architect and engineer with 13 years of professional experience, 8+ of them in data and BI, across retail, chemicals, energy, transport and maritime. Leads end-to-end data architecture, BI ecosystems, cloud data pipelines (GCP, Azure, Snowflake, Microsoft Fabric) and enterprise integration (SAP–Salesforce, event-driven). As PM-Tech Lead, takes engagements from discovery with the client to production. Outside client work, builds products from scratch on a self-hosted lab, using AI coding agents day to day.",
+  "summaryExtended": "Data Architect and engineer with 13 years of professional experience, 8+ in data and BI (retail, chemicals, energy, transport, maritime). BI and data warehousing, cloud pipelines (GCP, Azure, Snowflake, Fabric), enterprise integration (SAP–Salesforce, event-driven), ETL and orchestration (Talend, dbt, Airflow), Python and FastAPI services. PM-Tech Lead and solution architect on multi-year engagements; builds reusable frameworks and scalable data platforms. Applies AI to governed reporting and to everyday engineering work.",
   "coreStrengths": [
     "End-to-end data architecture and cloud data pipelines",
     "BI ecosystems: Power BI, SSAS Tabular, semantic models, KPIs",
     "Enterprise integration: SAP, Salesforce, event-driven architectures",
-    "ETL & orchestration: dbt, Apache Airflow, Talend, DataBricks",
+    "ETL & orchestration: dbt, Apache Airflow, Talend, Databricks",
     "Technical leadership and solution architecture on multi-year engagements",
     "Reusable frameworks and data governance"
   ],
@@ -18,7 +18,7 @@
       "companyUrl": "https://www.sdggroup.com/",
       "start": "Apr 2021",
       "end": "Present",
-      "summary": "Lead end-to-end data architecture, integration, and orchestration across retail, chemicals, energy, and transport. Deliver scalable BI, cloud data pipelines, and event-driven integrations for enterprise clients.",
+      "summary": "End-to-end data architecture, integration and orchestration for enterprise clients in retail, chemicals, energy and transport. PM-Tech Lead on recent engagements (DOMO, Ciments Molins, DACSA, GAM Family, OCA Global), owning delivery from discovery to production.",
       "impact": [
         "Established best practices for event-driven architectures and data orchestration across heterogeneous systems.",
         "Delivered cloud-native pipelines (GCP, Azure, Snowflake, Fabric), enabling scalable analytics and near real-time reporting.",
@@ -28,46 +28,30 @@
         {
           "client": "DACSA",
           "timeframe": "2026",
-          "summary": "Led as PM-Tech Lead. Deployment of the Microsoft Fabric infrastructure and migration of the data architecture, alongside Dynamics 365: medallion layers, a dbt project (60+ Silver models and Gold dimensions), and ingestion notebooks for Eurostat, AEMET and CBOT.",
-          "stack": ["Microsoft Fabric", "dbt", "Dynamics 365", "PySpark"],
+          "summary": "Deployment of the Microsoft Fabric infrastructure and migration of the data architecture alongside Dynamics 365: medallion layers, a dbt project (60+ Silver models and Gold dimensions), and PySpark ingestion notebooks for Eurostat, AEMET and CBOT.",
+          "stack": ["Microsoft Fabric", "dbt", "Dynamics 365", "PySpark", "Terraform"],
           "outcome": "Fabric infrastructure and the migrated architecture in production, with customer, financial and product data, and CI/CD for dbt and SQL Warehouses.",
           "slug": "dacsa-fabric-migration",
           "proposal": {
             "label": "Commercial proposal",
-            "timeframe": "2027",
+            "timeframe": "Implementation planned for 2027",
             "kind": "business-development",
-            "summary": "Led as PM-Tech Lead. Board-ready proposal for an operational integration backbone on the Fabric platform deployed in 2026: an operational canonical model, an event engine, an Operational Data Hub, edge and transaction planes, Dynamics readiness, and a governed path to agents.",
+            "summary": "Board-ready proposal for an operational integration backbone on the Fabric platform deployed in 2026: an operational canonical model, an event engine, an Operational Data Hub, edge and transaction planes, Dynamics readiness, and a governed path to agents.",
             "stack": ["Microsoft Fabric", "dbt", "Dynamics 365", "Event-driven integration"],
-            "outcome": "Implementation is expected in 2027, as a stop-and-go programme that reuses the analytical canon already in production instead of rebuilding it."
+            "outcome": "A stop-and-go programme that reuses the analytical canon already in production instead of rebuilding it."
           }
-        },
-        {
-          "client": "GAM Family",
-          "timeframe": "2026",
-          "kind": "business-development",
-          "summary": "Led as PM-Tech Lead. As-Is assessment of a Power BI and Fabric PPU estate (44 workspaces, 514 artefacts) with no medallion layer, and a To-Be proposal to migrate toward the same DDP-DataOS pattern used at DACSA.",
-          "stack": ["Power BI", "Microsoft Fabric", "Python"],
-          "outcome": "An evidence-based baseline of usage, gateways, ownership and debt used to justify the DataOS migration. The medallion platform is proposed, not deployed."
-        },
-        {
-          "client": "OCA Global",
-          "timeframe": "2026",
-          "kind": "business-development",
-          "summary": "Led as PM-Tech Lead. Delivery design for governed AI reporting on the existing Financial DWH in BigQuery: a semantic layer and Dataplex catalog, SELECT-only text-to-SQL agents, versioned report generation, and a portal that serves dashboards without an AI cost per view.",
-          "stack": ["GCP", "BigQuery", "Cloud Run", "Dataplex"],
-          "outcome": "A four-block plan from discovery to go-live that replaces uncontrolled GenAI self-service with a platform controlled by IT. Design and estimate, not a completed go-live."
         },
         {
           "client": "Ciments Molins — Minerva",
           "timeframe": "In production",
-          "summary": "Led as PM-Tech Lead. Financial planning and analysis for the group's finance arm, about 40 companies. Minerva loads Excel templates and masters from SharePoint, orchestrates ingestion in Azure Data Factory, transforms them through a Databricks medallion, and refreshes Power BI.",
+          "summary": "Financial planning and analysis for the group's finance arm, about 40 companies. Minerva loads Excel templates and masters from SharePoint, orchestrates ingestion in Azure Data Factory, transforms them through a Databricks medallion, and refreshes Power BI.",
           "stack": ["Azure Data Factory", "Databricks", "SharePoint", "Power Apps", "Power BI"],
           "outcome": "Business users run PROCESS, REPROCESS or DELETE by company, year, month and concept from a Canvas App, with Power Automate calling the pipelines."
         },
         {
           "client": "DOMO",
           "timeframe": "2025–2026",
-          "summary": "Led as PM-Tech Lead. Customer master integration between Salesforce and the Data Hub (ODH/SAP): a canonical JSON model and a custom Java JSON utility library (2,500+ lines) driving Talend read, write, backfill and CDC.",
+          "summary": "Customer master integration between Salesforce and the Data Hub (ODH/SAP): a canonical JSON model and a custom Java JSON utility library (2,500+ lines) driving Talend read, write, backfill and CDC.",
           "stack": ["Talend", "Java", "Salesforce", "SAP"],
           "outcome": "Traceable bidirectional sync across Data Hub, CRM and ERP, using structural comparison to choose POST or PATCH.",
           "slug": "domo-salesforce-data-hub"
@@ -75,15 +59,15 @@
         {
           "client": "TOUS",
           "timeframe": "2025",
-          "summary": "Migration of the GPC_Tous data platform: FastAPI APIs for recommendations, cart and wishlist, a repository pattern with multi-level cache, and metadata-driven Airflow DAGs defined in YAML.",
-          "stack": ["FastAPI", "Apache Airflow", "BigQuery", "Dataflow", "Datastore"],
-          "outcome": "27+ pipelines moved onto a layered platform, with lower API latency and shorter DAG runtime.",
+          "summary": "Migration of the GPC_Tous data platform from a monolithic base (Flask, coupled DAGs, scattered config) to a layered one: FastAPI APIs for recommendations, abandoned cart and wishlist, a repository pattern with multi-level cache, and metadata-driven Airflow DAGs defined in YAML.",
+          "stack": ["Python", "FastAPI", "Apache Airflow", "BigQuery", "Dataflow", "Datastore"],
+          "outcome": "27+ pipelines moved onto the layered platform with the same behaviour, lower API latency, shorter DAG runtime and lower BigQuery and Dataflow cost.",
           "slug": "tous-data-platform"
         },
         {
           "client": "RENFE",
           "timeframe": "2024–2025",
-          "summary": "Analysis of the FyM Inmovilizado Power BI semantic model on Snowflake, covering modelling and DAX under high volumetry.",
+          "summary": "Analysis of the FyM Inmovilizado Power BI semantic model on Snowflake (hundreds of tables, 150+ relationships), covering modelling and DAX under high volumetry.",
           "stack": ["Power BI", "DAX", "Snowflake", "TMDL"],
           "outcome": "Ten modelling and DAX anti-patterns documented, with a prioritised optimisation plan and a phased roadmap.",
           "slug": "renfe-power-bi-optimisation"
@@ -92,9 +76,25 @@
           "client": "INDITEX (Zara)",
           "timeframe": "~3 years",
           "summary": "BI and data for sustainability and commercial: corporate sustainability dashboards, a central SSAS Tabular model (Join Life, rankings, composition), a Snowflake data layer, and Power BI reporting for SSP and GTW traceability, with RLS and data governance.",
-          "stack": ["Power BI", "SSAS Tabular", "Snowflake", "DataBricks", "DAX"],
+          "stack": ["Power BI", "SSAS Tabular", "Snowflake", "Databricks", "DAX"],
           "outcome": "One analytical model and operational reports, with legacy DB2 and Oracle sources migrated to Snowflake under validation.",
           "slug": "inditex-bi-sustainability"
+        },
+        {
+          "client": "GAM Family",
+          "timeframe": "2026",
+          "kind": "business-development",
+          "summary": "As-Is assessment of a Power BI and Fabric PPU estate (44 workspaces, 514 artefacts) with no medallion layer, and a To-Be proposal to migrate toward the same DDP-DataOS pattern used at DACSA.",
+          "stack": ["Power BI", "Microsoft Fabric", "Python"],
+          "outcome": "An evidence-based baseline of usage, gateways, ownership and debt used to justify the DataOS migration. The medallion platform is proposed, not deployed."
+        },
+        {
+          "client": "OCA Global",
+          "timeframe": "2026",
+          "kind": "business-development",
+          "summary": "Delivery design for governed AI reporting on the existing Financial DWH in BigQuery: a semantic layer and Dataplex catalog, SELECT-only text-to-SQL agents, versioned report generation, and a portal that serves dashboards without an AI cost per view.",
+          "stack": ["GCP", "BigQuery", "Cloud Run", "Dataplex"],
+          "outcome": "A four-block plan from discovery to go-live that replaces uncontrolled GenAI self-service with a platform controlled by IT. Design and estimate, not a completed go-live."
         }
       ]
     },
@@ -104,11 +104,11 @@
       "companyUrl": "https://www.binifadet.com/",
       "start": "Mar 2018",
       "end": "Mar 2021",
-      "summary": "Led the end-to-end design and implementation of the data & BI ecosystem for Bodegas Binifadet, from wine production to hospitality and gastronomy operations. Built scalable reporting frameworks for data-driven decisions across production, sales, and customer experience.",
+      "summary": "Led the end-to-end design and implementation of the data and BI ecosystem for Bodegas Binifadet, from wine production to hospitality and gastronomy operations. Built reporting frameworks for data-driven decisions across production, sales and customer experience.",
       "impact": [
-        "Designed and deployed a centralized Data Warehouse integrating operational, financial, and production sources.",
-        "Developed BI dashboards and predictive models to optimize oenological processes, resource planning, and sales forecasting.",
-        "Standardized KPI frameworks and automated reporting pipelines; introduced data validation for quality and consistency."
+        "Designed and deployed a centralised data warehouse integrating operational, financial and production sources.",
+        "Developed BI dashboards and predictive models to optimise oenological processes, resource planning and sales forecasting.",
+        "Standardised KPI frameworks and automated reporting pipelines; introduced data validation for quality and consistency."
       ]
     }
   ],
@@ -139,7 +139,7 @@
         "companyUrl": "https://www.gmsuae.com/",
         "start": "Jun 2015",
         "end": "Aug 2016",
-        "note": "Jack-up newbuild program (two NG-1800X, one NG-2500X) and a new yard at Mina Zayed. 11% cost reduction on structural steel and 20% on piping; commissioning and sea trials two weeks ahead of schedule."
+        "note": "Jack-up newbuild programme (two NG-1800X, one NG-2500X) and a new yard at Mina Zayed. 11% cost reduction on structural steel and 20% on piping; commissioning and sea trials two weeks ahead of schedule."
       },
       {
         "title": "Project Engineer",
@@ -169,11 +169,12 @@
   },
   "selectedProjectSlugs": ["inditex-bi-sustainability", "tous-data-platform", "domo-salesforce-data-hub", "renfe-power-bi-optimisation", "dacsa-fabric-migration", "mdif-ingestion-framework"],
   "skills": [
-    { "category": "Coding", "items": "Python, SQL, Java", "level": 90 },
-    { "category": "BI & Analytics", "items": "Power BI, SSAS Tabular, DAX, Power Query", "level": 95 },
-    { "category": "Cloud & Data Platforms", "items": "Snowflake, GCP (BigQuery, Composer), Azure, Microsoft Fabric", "level": 85 },
-    { "category": "ETL & Orchestration", "items": "dbt, Apache Airflow, Talend, DataBricks", "level": 88 },
-    { "category": "Integration", "items": "REST APIs, FastAPI, Salesforce, SAP, event-driven architectures", "level": 85 }
+    { "category": "Coding", "items": "Python, SQL, Java" },
+    { "category": "BI & Analytics", "items": "Power BI, SSAS Tabular, DAX, Power Query" },
+    { "category": "Cloud & Data Platforms", "items": "Snowflake, GCP (BigQuery, Composer), Azure, Microsoft Fabric" },
+    { "category": "ETL & Orchestration", "items": "dbt, Apache Airflow, Talend, Databricks" },
+    { "category": "Integration", "items": "REST APIs, FastAPI, Salesforce, SAP, event-driven architectures" },
+    { "category": "Infrastructure", "items": "Docker, Kubernetes, Proxmox VE, Terraform" }
   ],
   "areasOfExpertise": [
     "Data Architecture & Warehousing",
@@ -187,7 +188,7 @@
     "Technical Leadership & Mentoring",
     "Stakeholder Alignment & Communication",
     "Reusable Frameworks & Best Practices",
-    "Analytic Thinking & Problem Solving",
+    "Analytical Thinking & Problem Solving",
     "Agile Methodologies & Delivery Focus"
   ],
   "languages": [
@@ -217,9 +218,7 @@
     "location": "Anzio (RM)",
     "phone": "+39 3270838798",
     "email": "romanforns@gmail.com",
-    "skype": "Román Forns",
-    "skypeId": "live:.cid.fd217bfc7e8c0895",
-    "linkedin": "https://linkedin.com/in/román-forns-anglada-b91a5850/",
+    "linkedin": "https://linkedin.com/in/rom%C3%A1n-forns-anglada-b91a5850/",
     "github": "https://github.com/Romanforns",
     "website": "https://romanforns.com"
   },
@@ -229,65 +228,33 @@
       "slug": "mdif-ingestion-framework",
       "timeframe": "2024–2026 (ongoing)",
       "group": "product",
-      "description": "Framework for automated migration and ingestion across PostgreSQL, MySQL and Snowflake. Declarative YAML config, schema discovery from INFORMATION_SCHEMA, idempotent DDL with type mapping, and batch or cursor-based incremental loads orchestrated in Airflow.",
+      "description": "Python framework for automated migration and ingestion across PostgreSQL, MySQL and Snowflake. Declarative YAML config, schema discovery from INFORMATION_SCHEMA, idempotent DDL with type mapping, and batch or cursor-based incremental loads orchestrated in Airflow, with post-ingestion row-count checks. Deployed with Docker Compose.",
       "stack": ["Python", "YAML", "PostgreSQL", "MySQL", "Snowflake", "Apache Airflow", "Docker"],
       "outcome": "A single config drives discovery, DDL and load, and re-runs stay idempotent."
-    },
-    {
-      "title": "Laboratory — Proxmox to Kubernetes",
-      "timeframe": "2026",
-      "group": "infrastructure",
-      "description": "The host tools. Each workload runs on its own. The same lab provides remote access, name resolution and the public entry. A workload proved here is published by a deployment gateway, first onto a three-node Kubernetes cluster and then to a commercial provider.",
-      "stack": ["Proxmox VE", "ZFS", "LXC", "WireGuard", "Kubernetes"],
-      "outcome": "The tools a workload is proved on before it is published to a commercial provider."
-    },
-    {
-      "title": "Data Platform",
-      "timeframe": "2026",
-      "group": "infrastructure",
-      "description": "The data tools: capture of changes, an immutable history, the current state and the prepared views. Each application sees only its own data.",
-      "stack": ["Apache Iceberg", "Trino", "dbt", "DataHub"],
-      "outcome": "The central point of the data, for audit, analytical use and ML training. DataHub on 126 keeps the lineage and the data catalog of each application and each tenant."
-    },
-    {
-      "title": "ML training lab",
-      "timeframe": "2026",
-      "group": "infrastructure",
-      "description": "Trains on the prepared views of the Data Platform: a day in the vineyard, and a tank and a lot through the hour. It reads that prepared data and writes the model as its own result, leaving the history and every other product's data as they are. The place is reserved. The first finished model is still ahead.",
-      "stack": ["Python", "dbt"],
-      "outcome": "A model is trained from the platform's prepared data and stored as its own result."
-    },
-    {
-      "title": "Agents",
-      "timeframe": "2026",
-      "group": "infrastructure",
-      "description": "The agent tools of the lab: OpenCode and Cursor. OpenCode runs the operating routine of the node — look, diagnose, change, check and record. Cursor is the workstation where the products are written.",
-      "stack": ["OpenCode", "Cursor"],
-      "outcome": "The lab is operated, and the products are written, with these two agents."
-    },
-    {
-      "title": "Electronics lab",
-      "timeframe": "Next",
-      "group": "infrastructure",
-      "description": "An interest in telemetry, and the exploration that follows it. A new Proxmox node and an electronics lab, now being equipped, will take the products into telemetry, near real-time (NRT) data and streaming. The first bench is ESP32-S3 boards, with level shifting and an isolated serial link, reading tank level, liquid flow, distance and climate.",
-      "stack": ["Proxmox VE", "ESP32-S3", "Telemetry", "Streaming"],
-      "outcome": "Each product gets a place to try its own sensors, near real-time data and streams."
     },
     {
       "title": "Winery platform",
       "timeframe": "2026",
       "group": "product",
-      "description": "The day-to-day of a winery, from the vine and the cellar to the bottled lot, then stock, billing and the next customer. Staff work the vineyard, the cellar and the operations, and each lot keeps its genealogy. A staff portal and a Telegram agent share the same door, and an order is created only after a person confirms it. A prospect arrives with a status. Delivery, invoice and payment stay separate steps, so a sale is recorded before the wine has left and before it has been paid. The commercial site and a broker variant are built and waiting. This operation is the live reading on the Data Platform.",
+      "description": "Operations platform for a winery, from the vineyard and the cellar to the bottled lot, stock, invoicing and sales. A staff portal and a Telegram agent work on the same backend, and an order is created only after a person confirms it. Each lot keeps its genealogy. Delivery, invoice and payment are separate steps, so a sale is recorded before the wine has left and before it has been paid. A commercial website and a broker variant are built and not yet launched. Its operational data feeds the lab's data platform.",
       "stack": ["Odoo", "Telegram", "Next.js"],
-      "outcome": "Sensors feed the vineyard and cellar work, and every operation stays traceable from the grape through vinification to the bottled lot."
+      "outcome": "Every operation stays traceable from the grape through vinification to the bottled lot."
     },
     {
       "title": "Boat Assistant",
       "timeframe": "2026",
       "group": "product",
-      "description": "The intelligence of a connected boat. Sensors, weather and alarms reach a helm the skipper can still use with no internet. The boat in the lab speaks the same language the hardware will, so what is tried here is the product that goes on board. Advice from a model stays advice: a critical alarm is raised by rules on the boat itself. The history of each trip is ready to land on the Data Platform.",
-      "stack": ["NMEA2000", "MQTT", "Flutter"],
-      "outcome": "A skipper can run the boat from a local helm, and that history is ready for the shared data platform."
+      "description": "Software for a connected boat. Sensor, weather and alarm data reach a local helm that the skipper can use with no internet. The lab boat speaks the same protocol as the onboard hardware, so what is tested in the lab is what goes on board. Model suggestions stay advisory: critical alarms are raised by rules running on the boat itself.",
+      "stack": ["NMEA 2000", "MQTT", "Flutter"],
+      "outcome": "A skipper can run the boat from a local helm, and each trip's history is ready for the shared data platform."
+    },
+    {
+      "title": "Home lab — platform, data and agents",
+      "timeframe": "2026",
+      "group": "infrastructure",
+      "description": "Self-hosted environment where the products above are built and proved. Proxmox VE with ZFS and LXC, with remote access, name resolution and the public entry run in-house. A deployment gateway publishes a proven workload first to a three-node Kubernetes cluster and then to a commercial provider. A shared data platform (change capture, immutable history, current state and prepared views) keeps each application's data isolated, with DataHub holding lineage and the catalog per application and tenant. The lab is operated with AI agents: OpenCode for node operations, Cursor for product development. Next: an ML training area (no model trained yet) and an ESP32-S3 electronics bench for telemetry and streaming.",
+      "stack": ["Proxmox VE", "Kubernetes", "WireGuard", "Apache Iceberg", "Trino", "dbt", "DataHub", "OpenCode", "Cursor"],
+      "outcome": "Every product is tested on the same infrastructure path before it is published to a commercial provider."
     }
   ]
 }
