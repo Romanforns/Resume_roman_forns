@@ -5,11 +5,11 @@ import Link from 'next/link';
 export function CVPage() {
   const cv = getCV();
   return (
-    <article className="max-w-5xl mx-auto px-4 sm:px-6">
+    <article className="max-w-3xl mx-auto">
       <header className="mb-8 flex flex-col sm:flex-row items-center sm:items-start gap-4">
         <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-neon-cyan/30 shrink-0">
           <Image
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/avatar.jpg`}
+            src="/images/avatar.jpg"
             alt=""
             fill
             sizes="112px"
@@ -39,7 +39,7 @@ export function CVPage() {
 
       <section className="mb-8">
         <h2 className="section-heading">Experience</h2>
-        <div className="space-y-6">
+        <div className="space-y-8">
           {cv.experience.map((job, i) => (
             <div key={i}>
               <h3 className="font-semibold text-text">{job.title}</h3>
@@ -54,52 +54,156 @@ export function CVPage() {
                 · {job.start} – {job.end}
               </p>
               <p className="text-muted mt-1">{job.summary}</p>
-              {job.projects && job.projects.length > 0 && (
-                <>
-                  <p className="text-muted text-sm mt-2 font-medium">Key projects:</p>
-                  <ul className="list-disc list-inside mt-1 text-muted text-sm space-y-1">
-                    {job.projects.map((proj, j) => (
-                      <li key={j}>{proj}</li>
-                    ))}
-                  </ul>
-                </>
-              )}
               {job.impact && job.impact.length > 0 && (
-                <>
-                  <p className="text-muted text-sm mt-2 font-medium">Impact:</p>
-                  <ul className="list-disc list-inside mt-1 text-muted text-sm space-y-1">
-                    {job.impact.map((imp, j) => (
-                      <li key={j}>{imp}</li>
-                    ))}
-                  </ul>
-                </>
+                <ul className="list-disc list-inside mt-2 text-muted text-sm space-y-1">
+                  {job.impact.map((imp, j) => (
+                    <li key={j}>{imp}</li>
+                  ))}
+                </ul>
+              )}
+              {job.projects && job.projects.length > 0 && (
+                <div className="mt-4 space-y-4">
+                  {job.projects.map((proj) => (
+                    <div key={proj.slug ?? proj.client} className="border-l-2 border-neon-cyan/40 pl-4">
+                      <h4 className="font-medium text-text text-sm">
+                        {proj.slug ? (
+                          <Link href={`/work#${proj.slug}`} className="hover:text-neon-cyan">
+                            {proj.client}
+                          </Link>
+                        ) : (
+                          proj.client
+                        )}
+                        <span className="text-muted font-normal"> · {proj.timeframe}</span>
+                        {proj.kind === 'business-development' && (
+                          <span className="badge ml-2 align-middle">Business development</span>
+                        )}
+                      </h4>
+                      <p className="text-muted text-sm mt-1">{proj.summary}</p>
+                      {proj.outcome && (
+                        <p className="text-muted text-sm mt-1">
+                          <span className="text-text">
+                            {proj.kind === 'business-development' ? 'Proposal. ' : 'Outcome. '}
+                          </span>
+                          {proj.outcome}
+                        </p>
+                      )}
+                      {proj.stack && proj.stack.length > 0 && (
+                        <ul className="flex flex-wrap gap-1 mt-2 list-none">
+                          {proj.stack.map((item) => (
+                            <li key={item} className="badge">{item}</li>
+                          ))}
+                        </ul>
+                      )}
+                      {proj.proposal && (
+                        <div className="mt-3 border-l-2 border-neon-purple/40 pl-3">
+                          <h5 className="font-medium text-text text-sm">
+                            {proj.proposal.label}
+                            <span className="text-muted font-normal"> · {proj.proposal.timeframe}</span>
+                            {proj.proposal.kind === 'business-development' && (
+                              <span className="badge ml-2 align-middle">Business development</span>
+                            )}
+                          </h5>
+                          <p className="text-muted text-sm mt-1">{proj.proposal.summary}</p>
+                          {proj.proposal.outcome && (
+                            <p className="text-muted text-sm mt-1">
+                              <span className="text-text">
+                                {proj.proposal.kind === 'business-development' ? 'Proposal. ' : 'Outcome. '}
+                              </span>
+                              {proj.proposal.outcome}
+                            </p>
+                          )}
+                          {proj.proposal.stack && proj.proposal.stack.length > 0 && (
+                            <ul className="flex flex-wrap gap-1 mt-2 list-none">
+                              {proj.proposal.stack.map((item) => (
+                                <li key={item} className="badge">{item}</li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
               )}
             </div>
           ))}
         </div>
+
+        {cv.earlierCareer && (
+          <div className="mt-8 pt-6 border-t border-border">
+            <h3 className="font-semibold text-text">{cv.earlierCareer.heading}</h3>
+            <p className="text-xs text-muted mt-1">{cv.earlierCareer.period}</p>
+            <p className="text-muted text-sm mt-2">{cv.earlierCareer.summary}</p>
+            <ul className="mt-4 space-y-3 list-none">
+              {cv.earlierCareer.roles.map((role) => (
+                <li key={`${role.company}-${role.start}`}>
+                  <p className="text-sm font-medium text-text">{role.title}</p>
+                  <p className="text-sm text-muted">
+                    {role.companyUrl ? (
+                      <a href={role.companyUrl} target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:underline">
+                        {role.company}
+                      </a>
+                    ) : (
+                      role.company
+                    )}{' '}
+                    · {role.start} – {role.end}
+                  </p>
+                  <p className="text-muted text-sm">{role.note}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </section>
 
       {cv.personalProjects && cv.personalProjects.length > 0 && (
         <section className="mb-8">
           <h2 className="section-heading">Personal &amp; Side Projects</h2>
-          <p className="text-muted text-sm mb-3">Side and proof-of-concept projects; full context for each is in the Portfolio / case studies.</p>
-          <div className="space-y-4">
-            {cv.personalProjects.map((proj, i) => (
-              <div key={i}>
-                <h3 className="font-semibold text-text text-base">
-                  {proj.slug ? (
-                    <Link href={`/case-studies/${proj.slug}`} className="text-neon-cyan hover:underline">
-                      {proj.title}
-                    </Link>
-                  ) : (
-                    proj.title
-                  )}
-                </h3>
-                <p className="text-xs text-muted">{proj.timeframe}</p>
-                <p className="text-muted text-sm mt-1">{proj.description}</p>
+          <p className="text-muted text-sm mb-4">Local infrastructure first, the tools the lab runs on. Then the products.</p>
+          {(
+            [
+              ["infrastructure", "Local infrastructure"],
+              ["product", "Products"],
+            ] as const
+          ).map(([group, heading]) => {
+            const items = cv.personalProjects!.filter((proj) => (proj.group ?? "product") === group);
+            if (items.length === 0) return null;
+            return (
+              <div key={group} className="mb-6">
+                <h3 className="font-semibold text-text mb-3">{heading}</h3>
+                <div className="space-y-5">
+                  {items.map((proj) => (
+                    <div key={proj.slug ?? proj.title} className="border-l-2 border-neon-purple/50 pl-4">
+                      <h4 className="font-semibold text-text text-base">
+                        {proj.slug ? (
+                          <Link href={`/work#${proj.slug}`} className="hover:text-neon-cyan">
+                            {proj.title}
+                          </Link>
+                        ) : (
+                          proj.title
+                        )}
+                      </h4>
+                      <p className="text-xs text-muted">{proj.timeframe}</p>
+                      <p className="text-muted text-sm mt-1">{proj.description}</p>
+                      {proj.outcome && (
+                        <p className="text-muted text-sm mt-1">
+                          <span className="text-text">Outcome. </span>
+                          {proj.outcome}
+                        </p>
+                      )}
+                      {proj.stack && proj.stack.length > 0 && (
+                        <ul className="flex flex-wrap gap-1 mt-2 list-none">
+                          {proj.stack.map((item) => (
+                            <li key={item} className="badge">{item}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </section>
       )}
 

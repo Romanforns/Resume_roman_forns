@@ -19,16 +19,6 @@ const config: Config = {
         'neon-cyan-dim': '#0891b2',
         'neon-purple': '#a78bfa',
         'neon-purple-dim': '#7c3aed',
-        // Pipeline (image reference)
-        'pipeline-bronze': '#3E2D12',
-        'pipeline-bronze-border': '#CE8F3F',
-        'pipeline-silver': '#4d4d4d',
-        'pipeline-silver-border': '#8a8a8a',
-        'pipeline-gold': '#5c4a1f',
-        'pipeline-gold-border': '#CE8F3F',
-        'pipeline-node': '#202020',
-        'pipeline-node-border': '#404040',
-        'pipeline-line': '#FFD700',
       },
       fontFamily: {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
@@ -41,9 +31,6 @@ const config: Config = {
       boxShadow: {
         glow: '0 0 20px -5px rgba(34, 211, 238, 0.25)',
         'glow-purple': '0 0 20px -5px rgba(167, 139, 250, 0.25)',
-        'pipeline-layer': '0 4px 24px rgba(0,0,0,0.3)',
-        'pipeline-node': 'inset 0 1px 0 rgba(255,255,255,0.06), 0 2px 8px rgba(0,0,0,0.4)',
-        'pipeline-node-hover': '0 0 0 2px rgba(255, 215, 0, 0.9), 0 0 20px 2px rgba(255, 215, 0, 0.35)',
       },
       spacing: {
         section: '4rem',

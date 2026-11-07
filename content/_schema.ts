@@ -29,6 +29,26 @@ export const caseStudySchema = z.object({
 
 export type CaseStudyFrontmatter = z.infer<typeof caseStudySchema>;
 
+const projectPhaseSchema = z.object({
+  label: z.string(),
+  timeframe: z.string(),
+  kind: z.enum(['business-development']).optional(),
+  summary: z.string(),
+  outcome: z.string().optional(),
+  stack: z.array(z.string()).optional(),
+});
+
+export const experienceProjectSchema = z.object({
+  client: z.string(),
+  timeframe: z.string(),
+  summary: z.string(),
+  stack: z.array(z.string()).optional(),
+  outcome: z.string().optional(),
+  slug: z.string().optional(),
+  kind: z.enum(['business-development']).optional(),
+  proposal: projectPhaseSchema.optional(),
+});
+
 export const experienceSchema = z.object({
   title: z.string(),
   company: z.string(),
@@ -37,7 +57,23 @@ export const experienceSchema = z.object({
   end: z.string(),
   summary: z.string(),
   impact: z.array(z.string()).optional(),
-  projects: z.array(z.string()).optional(),
+  projects: z.array(experienceProjectSchema).optional(),
+});
+
+export const earlierRoleSchema = z.object({
+  title: z.string(),
+  company: z.string(),
+  companyUrl: z.string().optional(),
+  start: z.string(),
+  end: z.string(),
+  note: z.string(),
+});
+
+export const earlierCareerSchema = z.object({
+  heading: z.string(),
+  period: z.string(),
+  summary: z.string(),
+  roles: z.array(earlierRoleSchema),
 });
 
 export const cvSchema = z.object({
@@ -47,6 +83,7 @@ export const cvSchema = z.object({
   summaryExtended: z.string().optional(),
   coreStrengths: z.array(z.string()),
   experience: z.array(experienceSchema),
+  earlierCareer: earlierCareerSchema.optional(),
   selectedProjectSlugs: z.array(z.string()).optional(),
   skills: z.array(
     z.object({
@@ -91,6 +128,9 @@ export const cvSchema = z.object({
         slug: z.string().optional(),
         timeframe: z.string(),
         description: z.string(),
+        stack: z.array(z.string()).optional(),
+        outcome: z.string().optional(),
+        group: z.enum(["infrastructure", "product"]).optional(),
       })
     )
     .optional(),

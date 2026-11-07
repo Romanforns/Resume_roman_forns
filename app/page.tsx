@@ -1,15 +1,17 @@
 import { Hero } from '@/components/sections/Hero';
-import { PipelineSection } from '@/components/sections/PipelineSection';
+import { ProofRow } from '@/components/sections/ProofRow';
+import { Stats } from '@/components/sections/Stats';
+import { RecentWork } from '@/components/sections/RecentWork';
 import { Services } from '@/components/sections/Services';
 import { Connect } from '@/components/sections/Connect';
-import { getCV } from '@/lib/content';
 
 export default function HomePage() {
-  const cv = getCV();
   return (
     <>
-      <Hero cv={cv} />
-      <PipelineSection cv={cv} />
+      <Hero />
+      <ProofRow />
+      <Stats />
+      <RecentWork />
       <Services />
       <Connect />
     </>

@@ -2,12 +2,7 @@
   "hero": {
     "headline": "Data Engineer & Solutions Architect",
     "subline": "Data + Web3",
-    "profileLines": [
-      "I entered the data discipline over a decade ago through operational roles in maritime construction and Oil&Gas, where construction project management required exploiting the data. I now lead cloud data platforms and enterprise integration.",
-      "Hands-on across BI, scalable pipelines (GCP, Azure, Snowflake, Fabric), and SAP–Salesforce integration.",
-      "Technical lead and solutions architect: from architecture design through delivery of large-scale data solutions.",
-      "Over ten years focused on making data reliable, accessible, and actionable for business decisions; I contribute to the market’s evolution through blockchain solutions and AI integration."
-    ],
+    "subheadline": "10+ years designing and delivering large-scale data solutions: BI, cloud pipelines, enterprise integration. Technical lead and solution architect.",
     "ctaWork": "View Work",
     "ctaContact": "Contact"
   },
@@ -17,9 +12,9 @@
     "subheadline": "End-to-end data architecture, cloud data pipelines (GCP, Azure, Snowflake, Fabric), and enterprise integration (SAP–Salesforce)."
   },
   "stats": [
-    { "label": "Scope", "value": "End-to-end data architecture, from design through delivery", "safe": true },
-    { "label": "Stack", "value": "GCP, Azure, Snowflake, Fabric, SAP–Salesforce", "safe": true },
-    { "label": "Outcomes", "value": "Scalable pipelines, near real-time reporting, governed analytics", "safe": true }
+    { "label": "Data processed", "value": "Multi-cloud (GCP, Azure, Snowflake, Fabric)", "safe": true },
+    { "label": "Performance", "value": "Scalable pipelines & near real-time reporting", "safe": true },
+    { "label": "Multi-cloud", "value": "GCP, Azure, Snowflake, Microsoft Fabric", "safe": true }
   ],
   "services": [
     {
