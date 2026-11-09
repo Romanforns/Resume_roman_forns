@@ -159,11 +159,11 @@ export function CVPage() {
       {cv.personalProjects && cv.personalProjects.length > 0 && (
         <section className="mb-8">
           <h2 className="section-heading">Personal &amp; Side Projects</h2>
-          <p className="text-muted text-sm mb-4">Local infrastructure first, the tools the lab runs on. Then the products.</p>
+          <p className="text-muted text-sm mb-4">Products built on my own time, and the lab they run on.</p>
           {(
             [
-              ["infrastructure", "Local infrastructure"],
               ["product", "Products"],
+              ["infrastructure", "Local infrastructure"],
             ] as const
           ).map(([group, heading]) => {
             const items = cv.personalProjects!.filter((proj) => (proj.group ?? "product") === group);

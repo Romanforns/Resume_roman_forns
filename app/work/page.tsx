@@ -3,7 +3,7 @@ import { WorkListing } from '@/components/sections/WorkListing';
 
 export const metadata = {
   title: 'Work',
-  description: 'Case studies and projects — Data platforms, BI, integration, blockchain analytics.',
+  description: 'Case studies and projects — Data platforms, BI, integration and APIs.',
 };
 
 export default function WorkPage() {

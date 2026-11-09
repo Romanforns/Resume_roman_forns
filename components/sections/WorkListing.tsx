@@ -27,6 +27,11 @@ export function WorkListing({ studies }: { studies: CaseStudyWithSlug[] }) {
     });
   }, [studies, domainFilter]);
 
+  // Only offer filters for domains that at least one case study uses.
+  const usedDomains = domains.filter((d) =>
+    studies.some((s) => (Array.isArray(s.domain) ? s.domain.includes(d) : s.domain === d))
+  );
+
   return (
     <>
       <div className="flex flex-wrap gap-2 mb-8">
@@ -37,7 +42,7 @@ export function WorkListing({ studies }: { studies: CaseStudyWithSlug[] }) {
         >
           All
         </button>
-        {domains.map((d) => (
+        {usedDomains.map((d) => (
           <button
             key={d}
             type="button"
